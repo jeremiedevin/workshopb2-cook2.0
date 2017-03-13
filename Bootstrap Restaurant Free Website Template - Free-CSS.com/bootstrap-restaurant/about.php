@@ -46,51 +46,6 @@
                 <li class=""><a href="index.html">Home</a></li>
                 <li class="active"><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="#tablebooking">Table Booking</a></li>
-				<li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Indina <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">DRINKS</a></li>
-                    <li><a href="#">STARTERS</a></li>
-                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
-                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
-                    <li><a href="#">LAMB MAIN COURSES</a></li>
-                    <li><a href="#">RICE/BREDS</a></li>
-                    <li><a href="#">ACCOMPANIMENTS</a></li>
-                  </ul>
-                </li>
-
-				<li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Italian <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">DRINKS</a></li>
-                    <li><a href="#">STARTERS</a></li>
-                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
-                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
-                    <li><a href="#">LAMB MAIN COURSES</a></li>
-                    <li><a href="#">RICE/BREDS</a></li>
-                    <li><a href="#">ACCOMPANIMENTS</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chines <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">DRINKS</a></li>
-                    <li><a href="#">STARTERS</a></li>
-                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
-                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
-                    <li><a href="#">LAMB MAIN COURSES</a></li>
-                    <li><a href="#">RICE/BREDS</a></li>
-                    <li><a href="#">ACCOMPANIMENTS</a></li>
-                  </ul>
-                </li>
               </ul>
             </div>
           </div>

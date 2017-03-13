@@ -43,54 +43,9 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="#tablebooking">Table Booking</a></li>
-				<li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Indina <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">DRINKS</a></li>
-                    <li><a href="#">STARTERS</a></li>
-                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
-                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
-                    <li><a href="#">LAMB MAIN COURSES</a></li>
-                    <li><a href="#">RICE/BREDS</a></li>
-                    <li><a href="#">ACCOMPANIMENTS</a></li>
-                  </ul>
-                </li>
-
-				<li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Italian <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">DRINKS</a></li>
-                    <li><a href="#">STARTERS</a></li>
-                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
-                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
-                    <li><a href="#">LAMB MAIN COURSES</a></li>
-                    <li><a href="#">RICE/BREDS</a></li>
-                    <li><a href="#">ACCOMPANIMENTS</a></li>
-                  </ul>
-                </li>
-
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Chines <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">DRINKS</a></li>
-                    <li><a href="#">STARTERS</a></li>
-                    <li><a href="#">TANDOORI - CLAY OVEN - DISHES</a></li>
-                    <li class="divider"></li>
-                    <li class="dropdown-header">SEAFOOD MAIN COURSES</li>
-                    <li><a href="#">CHICKEN MAIN COURSES</a></li>
-                    <li><a href="#">LAMB MAIN COURSES</a></li>
-                    <li><a href="#">RICE/BREDS</a></li>
-                    <li><a href="#">ACCOMPANIMENTS</a></li>
-                  </ul>
-                </li>
+                <li class="active"><a href="index.php">Home</a></li>
+                <li><a href="about.php">About Us</a></li>
+                <li><a href="contact.php">Contact</a></li>
               </ul>
             </div>
           </div>
@@ -113,10 +68,36 @@
       <div class="carousel-inner">
         <div class="item active">
           <script
-			src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
+			src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBLfc3F338iXg3L4nT1WsjplI29vQzImF0&sensor=false">
 			</script>
 			<script>
-			var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+
+      if (navigator.geolocation)
+    navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+else
+    alert("Votre navigateur ne prend pas en compte la géolocalisation HTML5");
+
+function successCallback(position){
+    //alert("Latitude : " + position.coords.latitude + ", longitude : " + position.coords.longitude);
+};
+
+function errorCallback(error){
+    switch(error.code){
+        case error.PERMISSION_DENIED:
+            alert("L'utilisateur n'a pas autorisé l'accès à sa position");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            alert("L'emplacement de l'utilisateur n'a pas pu être déterminé");
+            break;
+        case error.TIMEOUT:
+            alert("Le service n'a pas répondu à temps");
+            break;
+        }
+};
+
+
+
+			var myCenter=new google.maps.LatLng(47.213084,-1.552989);
 			var marker;
 			function initialize()
 			{
@@ -136,7 +117,7 @@
 
 			// Info open
 			var infowindow = new google.maps.InfoWindow({
-			  content:"Hello World!"
+			  content:"Votre position!"
 			  });
 
 			google.maps.event.addListener(marker, 'click', function() {
@@ -148,7 +129,7 @@
 			<div id="googleMap" style="height:450px;"></div>
 			  <div class="container">
 				<div class="carousel-caption">
-				  <a class="btn btn-lg btn-default" href="#" role="button" style="font-size:2em">Order Online Now &raquo;</a>
+				  <a class="btn btn-lg btn-default" href="#" role="button" style="font-size:2em">Commandez dès maintenant en ligne &raquo;</a>
 				</div>
 			  </div>
 			</div>
@@ -158,7 +139,7 @@
 
 	<div class="mainTitle">
 	<div class="container">
-	<h1>Bootstrappage Restaurant</h1>
+	<h1>K & E - Services</h1>
 	<p>
 	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
 	</p>
@@ -176,19 +157,19 @@
           <img class="img-circle" src="themes/assets/images/nepali-momo.png" alt="Generic placeholder image">
           <h2>Nepalese MOMO</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies</p>
-          <p><a class="btn btn-default" href="#" role="button">&pound; 2.2 Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">2.2€ Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img class="img-circle" src="themes/assets/images/burger.png" alt="Generic placeholder image">
           <h2>Burger</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. </p>
-          <p><a class="btn btn-default" href="#" role="button">&pound;5 Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">5€ Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
 		  <img class="img-circle" src="themes/assets/images/gorkha-special-chicken.png" alt="Lam Tikka">
           <h2>Gurkha Chicken</h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. </p>
-          <p><a class="btn btn-default" href="#" role="button">&pound;4 Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">4€ Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 	</div>
@@ -223,17 +204,17 @@
         <div class="col-lg-4">
           <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
           <h4>Meal</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -243,17 +224,17 @@
         <div class="col-lg-4">
           <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
           <h4>Meal</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -263,17 +244,17 @@
         <div class="col-lg-4">
           <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img  src="themes/assets/images/burger.png" alt="Generic placeholder image">
           <h4>Meal</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
         </div>
@@ -293,17 +274,17 @@
         <div class="col-lg-4">
            <img src="themes/assets/images/salate.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
          <img src="themes/assets/images/chicken.png" alt="Generic placeholder image">
           <h4>Meal</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/drinks_lussy.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -313,17 +294,17 @@
         <div class="col-lg-4">
           <img src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/fish-and-chips.png" alt="Generic placeholder image">
           <h4>Meal</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -333,17 +314,17 @@
         <div class="col-lg-4">
           <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img  src="themes/assets/images/burger.png" alt="Generic placeholder image">
           <h4>Meal</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
         </div>
@@ -363,17 +344,17 @@
         <div class="col-lg-4">
           <img src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">
           <h4>Chicken</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/rice.png" alt="Generic placeholder image">
           <h4>Rice</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -383,17 +364,17 @@
         <div class="col-lg-4">
           <img src="themes/assets/images/courinder.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/burger.png" alt="Generic placeholder image">
           <h4>Meal</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
@@ -403,17 +384,17 @@
         <div class="col-lg-4">
           <img  src="themes/assets/images/salate.png" alt="Generic placeholder image">
           <h4>Salates</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img  src="themes/assets/images/chicken_fry.png" alt="Generic placeholder image">
           <h4>Chicken</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img  src="themes/assets/images/drinks.png" alt="Generic placeholder image">
           <h4>Drink</h4>
-          <p><a class="btn btn-default" href="#" role="button">Add to cart &raquo;</a></p>
+          <p><a class="btn btn-default" href="#" role="button">Ajouter au panier &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
         </div>
