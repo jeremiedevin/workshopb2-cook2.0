@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,7 @@
 
     <!-- Custom styles for this template -->
     <link href="themes/assets/css/carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="themes/assets/libs/font-awesome-4.7.0/css/font-awesome.min.css">
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -43,9 +44,12 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="index.php">Home</a></li>
+                <li class="active"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li><a href="#">Restaurants</a></li>
+                <li><a href="#">Visites</a></li>
                 <li><a href="about.php">About Us</a></li>
                 <li><a href="contact.php">Contact</a></li>
+                <li style='position:absolute;right:0;'><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-user" aria-hidden="true"></i> Connexion / Inscription</a></li>
               </ul>
             </div>
           </div>
@@ -53,6 +57,40 @@
 
       </div>
     </div>
+
+    <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+            <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+            <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+          </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
     <!-- Carousel
@@ -68,8 +106,11 @@
       <div class="carousel-inner">
         <div class="item active">
           <script
-			src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBLfc3F338iXg3L4nT1WsjplI29vQzImF0&sensor=false">
+			src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHDJE8_1RXsiXaqNOoiAt4xPXtkI39TYM&sensor=false">
+      // clé dev : AIzaSyBLfc3F338iXg3L4nT1WsjplI29vQzImF0
+      // clé en ligne : AIzaSyCHDJE8_1RXsiXaqNOoiAt4xPXtkI39TYM
 			</script>
+
 			<script>
 
       if (navigator.geolocation)
