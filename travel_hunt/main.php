@@ -4,11 +4,11 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!DOCTYPE php>
+<!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
 <head>
-<title>K&E - Groupe</title>
+<title>Travel Hunt App A Mobile App Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel Hunt App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
@@ -65,11 +65,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 						<div class="pro-menu">
 							<div class="logo">
-								<li><a class=" link link--yaku  active" href="main.php"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
-								<li><a class=" link link--yaku" href="about.php"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
-								<li><a class=" link link--yaku" href="short-codes.php"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku" href="destination.php"><span>D</span><span>e</span><span>s</span><span>t</span><span>i</span><span>n</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a></li>
-								<li><a class=" link link--yaku" href="contact.php"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
+								<li><a class=" link link--yaku  active" href="main.html"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
+								<li><a class=" link link--yaku" href="about.html"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
+								<li><a class=" link link--yaku" href="short-codes.html"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
+								<li><a class=" link link--yaku" href="destination.html"><span>D</span><span>e</span><span>s</span><span>t</span><span>i</span><span>n</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a></li>
+								<li><a class=" link link--yaku" href="contact.html"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
 							</div>
 
 
@@ -83,7 +83,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
 				</div>
 				<div class="Profile-mid">
-					<h5 class="pro-link"><a href="main.php">Travel Hunt</a></h5>
+					<h5 class="pro-link"><a href="main.html">Travel Hunt</a></h5>
 				</div>
 				<div class="Profile-right">
 					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a>
@@ -91,7 +91,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div id="small-dialog" class="mfp-hide">
 						<div class="login-modal">
 							<div class="booking-info">
-							   <h3><a href="main.php">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
+							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
 
 							</div>
 							<div class="login-form">
@@ -121,7 +121,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div id="small-dialog1" class="mfp-hide">
 						<div class="login-modal">
 							<div class="booking-info">
-							   <h3><a href="main.php">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
+							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
 
 							</div>
 							<div class="login-form signup-form">
@@ -168,10 +168,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		<div class="w3agile banner-bottom">
 				<ul>
-				    <li><a href="flight.php" class="hvr-radial-out"><i class="fa fa-plane" aria-hidden="true"></i></a><h6>Flight</h6></li>
-					<li><a href="train.php" class="hvr-radial-out"><i class="fa fa-train" aria-hidden="true"></i></a><h6>Train</h6></li>
-					<li><a href="bus.php" class="hvr-radial-out"><i class="fa fa-bus" aria-hidden="true"></i></a><h6>Bus</h6></li>
-					<li><a href="hotel.php" class="hvr-radial-out"><i class="fa fa-bed" aria-hidden="true"></i></a><h6>Hotels</h6></li>
+				    <li><a href="flight.html" class="hvr-radial-out"><i class="fa fa-plane" aria-hidden="true"></i></a><h6>Flight</h6></li>
+					<li><a href="train.html" class="hvr-radial-out"><i class="fa fa-train" aria-hidden="true"></i></a><h6>Train</h6></li>
+					<li><a href="bus.html" class="hvr-radial-out"><i class="fa fa-bus" aria-hidden="true"></i></a><h6>Bus</h6></li>
+					<li><a href="hotel.html" class="hvr-radial-out"><i class="fa fa-bed" aria-hidden="true"></i></a><h6>Hotels</h6></li>
 				</ul>
 			</div>
    <!-- //banner -->
@@ -196,7 +196,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img src="images/4.jpg" class="img-responsive" alt="">
 
 							<div class="mask">
-							    <a href="flight.php">
+							    <a href="flight.html">
 									  <div class="agile_text_box">
 											<i class="fa fa-plane" aria-hidden="true"></i>
 											<h3>Lorem ipsum</h3>
@@ -211,7 +211,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img src="images/5.jpg" class="img-responsive" alt="">
 
 							<div class="mask">
-							   <a href="train.php">
+							   <a href="train.html">
 									<div class="agile_text_box">
 										<i class="fa fa-train" aria-hidden="true"></i>
 										<h3>Train</h3>
@@ -229,7 +229,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<img src="images/6.jpg" class="img-responsive" alt="">
 
 							<div class="mask">
-							  <a href="bus.php">
+							  <a href="bus.html">
 								<div class="agile_text_box">
 									<i class="fa fa-bus" aria-hidden="true"></i>
 									<h3>Bus</h3>
@@ -243,7 +243,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<div class="view view-tenth">
 							<img src="images/7.jpg" class="img-responsive" alt="">
 							<div class="mask">
-							<a href="hotel.php">
+							<a href="hotel.html">
 							  <div class="agile_text_box">
 								<i class="fa fa-bed" aria-hidden="true"></i>
 								<h3>Hotels</h3>
@@ -266,15 +266,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h3>About Us</h3>
 				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
 					voluptatibus.</p>
-				<h3 class="logo"><a href="main.php">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
+				<h3 class="logo"><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
 			</div>
 			<div class="col-md-2 w3agile_footer_grid">
 				<h3>Links</h3>
 				<ul>
-					<li><a href="main.php">Home</a></li>
-					<li><a href="short-codes.php">Services</a></li>
-					<li><a href="about.php">About</a></li>
-					<li><a href="contact.php">Mail Us</a></li>
+					<li><a href="main.html">Home</a></li>
+					<li><a href="short-codes.html">Services</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Mail Us</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 w3agile_footer_grid">
