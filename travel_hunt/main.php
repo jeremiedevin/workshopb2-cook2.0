@@ -1,5 +1,5 @@
 <?php
-require('plugin-co.php');
+require('secu/plugin-co.php');
 ?>
 <!DOCTYPE html>
 
