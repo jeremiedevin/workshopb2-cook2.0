@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Travel Hunt a Mobile App Flat Bootstrap Responsive Website Template | Home :: W3layouts</title> 
+<title>Travel Hunt a Mobile App Flat Bootstrap Responsive Website Template | Home :: W3layouts</title>
 <!-- For-Mobile-Apps-and-Meta-Tags -->
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -17,39 +17,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //For-Mobile-Apps-and-Meta-Tags -->
 <!-- Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">  
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
 <!-- //Custom Theme files -->
 <!-- js -->
-<script src="js/jquery-2.2.3.min.js"></script> 
+<script src="js/jquery-2.2.3.min.js"></script>
 <!-- //js -->
-<!-- web-fonts -->  
+<!-- web-fonts -->
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-<!-- //web-fonts --> 
+<!-- //web-fonts -->
 </head>
 <body>
 	<div class="main-row">
 		<h1>T<span>r</span>a<span>v</span>e<span>l </span> <span>H</span>u<span>n</span>t</h1>
-		  
+
 				<div class="main_frame second">
 				<div class="main_frame">
-					<iframe class="frame-border" src="main.html" frameborder="0"></iframe>
+					<iframe class="frame-border" src="main.php" frameborder="0"></iframe>
 				</div>
 			</div>
 	</div>
 	<div class="copy-right">
 		<p>&copy; 2016 Travel Hunt . All Rights Reserved | Design by <a href="http://w3layouts.com" target="_blank">W3layouts</a></p>
 	</div>
-	<script src="js/jquery.nicescroll.min.js"></script> 
+	<script src="js/jquery.nicescroll.min.js"></script>
 	<script>
 	  $(document).ready(function() {
-	  
+
 		var nice = $("html").niceScroll();  // The document page (body)
 		
 		$("#div1").html($("#div1").html()+' '+nice.version);
-		
+
 		$("#boxscroll").niceScroll(); // First scrollable DIV
-		
+
 	  });
 	</script>
 </body>
