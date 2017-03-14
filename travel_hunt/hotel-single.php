@@ -9,9 +9,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="fr">
 <head>
-<title>Travel Hunt App A Mobile App Flat Bootstrap Responsive Website Template | Hotel-Single :: w3layouts</title>
+<title>Viz'Eat By K&E</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Travel Hunt App Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android  Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
