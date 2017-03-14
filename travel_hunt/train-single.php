@@ -102,7 +102,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<a href="#menu" class="menu-link"><i class="fa fa-list-ul"></i></a>
 				</div>
 				<div class="Profile-mid">
-					<h5 class="pro-link"><a href="main.html">Travel Hunt</a></h5>
+					<h5 class="pro-link"><a href="main.html">Viz'Eat By K&E</a></h5>
 				</div>
 				<div class="Profile-right">
 					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a>
