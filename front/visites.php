@@ -8,10 +8,11 @@ while($row = $result -> fetch()){
   $nom=$row['nom'];
   $image=$row['image'];
   $description=$row['description'];
-  $affichageVisites.="<div class='col-sm-6'><figure class='figure'>";
-  $affichageVisites.="<img src='images/visites/".$image."' class='figure-img img-fluid rounded' alt='".$nom."'>";
+  $affichageVisites.="<div class='col-sm-6' style='border:1px solid grey;text-align:center;'>";
+  $affichageVisites.="<h2>".$nom."</h2><figure class='figure'>";
+  $affichageVisites.="<img style='width:50%;' src='images/visites/".$image."' class='figure-img img-fluid rounded' alt='".$nom."'>";
   $affichageVisites.="<figcaption class='figure-caption'>".$description."</figcaption>";
-  $affichageVisites.="</figure></div>";
+  $affichageVisites.="</figure><br></div>";
 }
 
 ?>
