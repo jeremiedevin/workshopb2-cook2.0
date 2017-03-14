@@ -7,9 +7,9 @@
   </head>
   <body>
 
-    <?php require('header.php'); ?>
-
     <?php require('menu.php'); ?>
+
+    <?php require('header.php'); ?>
 
     <?php require('footer.php') ?>
 
