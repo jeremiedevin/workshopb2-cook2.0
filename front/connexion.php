@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html>
@@ -11,9 +10,7 @@
 
     <?php require('menu.php'); ?>
 
-
-
-    <!-- connexion -->
+  <!-- connexion -->
 
   <div class="col-sm-8" style="margin-left:16%;margin-right:16%;">
     <form>

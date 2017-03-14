@@ -17,17 +17,17 @@ function successCallback(position){
 };
 
 function errorCallback(error){
-switch(error.code){
-case error.PERMISSION_DENIED:
-    alert("L'utilisateur n'a pas autorisé l'accès à sa position");
-    break;
-case error.POSITION_UNAVAILABLE:
-    alert("L'emplacement de l'utilisateur n'a pas pu être déterminé");
-    break;
-case error.TIMEOUT:
-    alert("Le service n'a pas répondu à temps");
-    break;
-}
+  switch(error.code){
+  case error.PERMISSION_DENIED:
+      alert("L'utilisateur n'a pas autorisé l'accès à sa position");
+      break;
+  case error.POSITION_UNAVAILABLE:
+      alert("L'emplacement de l'utilisateur n'a pas pu être déterminé");
+      break;
+  case error.TIMEOUT:
+      alert("Le service n'a pas répondu à temps");
+      break;
+  }
 };
 
 var myCenter=new google.maps.LatLng(47.213084,-1.552989);
