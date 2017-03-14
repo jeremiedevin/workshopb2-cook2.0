@@ -1,4 +1,6 @@
-
+<?php
+require('secu/plugin-co.php');
+?>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -16,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta charset utf="8">
 <!--font-awsome-css-->
-     <link rel="stylesheet" href="css/font-awesome.min.css"> 
+     <link rel="stylesheet" href="css/font-awesome.min.css">
 <!--bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!--custom css-->
@@ -31,7 +33,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				$('.menu-link').bigSlide();
 				});
      </script>
-<!-- web-fonts -->  
+<!-- web-fonts -->
   <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- //web-fonts -->
@@ -44,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!-- Modal content-->
 				<div class="modal-content">
 					<div class="modal-header">
-					      
+
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<div class="modal-body">
@@ -57,14 +59,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<input type="text" name="Last Name"  required=""/>
 									<p>Your Email</p>
 									<input type="text" name="Your Email"  required=""/>
-									
+
 									<p>Your Phone</p>
 									<input type="text" name="Your Email"  required=""/>
 									<div class="search">
-										<input type="submit" value="Proceed To Payment">	
-									</div>									
-								</form> 		
-								
+										<input type="submit" value="Proceed To Payment">
+									</div>
+								</form>
+
 					</div>
 					</div>
 				</div>
@@ -88,7 +90,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a class=" link link--yaku" href="destination.html"><span>D</span><span>e</span><span>s</span><span>t</span><span>i</span><span>n</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a></li>
 								<li><a class=" link link--yaku" href="contact.html"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
 							</div>
-				
+
 
 						</div>
 				</div>
@@ -103,43 +105,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h5 class="pro-link"><a href="main.html">Travel Hunt</a></h5>
 				</div>
 				<div class="Profile-right">
-					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a> 
+					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a>
 					<!-- modal -->
 					<div id="small-dialog" class="mfp-hide">
-						<div class="login-modal"> 	
+						<div class="login-modal">
 							<div class="booking-info">
 							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
-								
+
 							</div>
 							<div class="login-form">
 								<form action="#" method="post">
 									<p>User Name </p>
 									<input type="text" name="Name" required=""/>
 									<p>User Password</p>
-									<input type="password" name="Password" required=""/>	 
-									<div class="wthree-text"> 
-										<ul> 
+									<input type="password" name="Password" required=""/>
+									<div class="wthree-text">
+										<ul>
 											<li>
 												<input type="checkbox" id="brand" value="">
-												<label for="brand"><span></span> Remember me ?</label>  
+												<label for="brand"><span></span> Remember me ?</label>
 											</li>
 											<li> <a href="#">Forgot password?</a> </li>
 										</ul>
 										<div class="clear"> </div>
-									</div> 
-									<input type="submit" value="Sign In">		
+									</div>
+									<input type="submit" value="Sign In">
 								</form>
 								<p>Don’t have an account ?<a href="#small-dialog1" class="sign-in popup-top-anim"> Sign Up</a></p>
-							</div> 
+							</div>
 						</div>
 					</div>
-					<!-- //modal --> 
+					<!-- //modal -->
 					<!-- modal-two -->
 					<div id="small-dialog1" class="mfp-hide">
-						<div class="login-modal">  
+						<div class="login-modal">
 							<div class="booking-info">
 							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
-								
+
 							</div>
 							<div class="login-form signup-form">
 								<form action="#" method="post">
@@ -148,21 +150,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<p>User Email </p>
 									<input type="text" name="Email"  required=""/>
 									<p>User Password</p>
-									<input type="password" name="Password" placeholder="" required=""/>	
-									<div class="wthree-text"> 
+									<input type="password" name="Password" placeholder="" required=""/>
+									<div class="wthree-text">
 										<input type="checkbox" id="brand1" value="">
-										<label for="brand1"><span></span>I accept the terms of use</label> 
+										<label for="brand1"><span></span>I accept the terms of use</label>
 									</div>
-									<input type="submit" value="Sign Up">		
-								</form> 
-							</div> 
+									<input type="submit" value="Sign Up">
+								</form>
+							</div>
 						</div>
 					</div>
-					<!-- //modal-two --> 
-					
+					<!-- //modal-two -->
+
 				</div>
 				<div class="clearfix"></div>
-			</div> 
+			</div>
 <!-- banner -->
    <div class="details-grid tr">
 				<div class="details-shade ">
@@ -170,17 +172,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<img src="images/logo.png" alt=" ">
 							<h3>Book A Train</h3>
 							<h4>You’re going to like us.</h4>
-								
-							
+
+
 						</div>
 						<div class="banner_search">
 								<form action="#" method="post">
 									<input type="search" name="search" value="Where to go ?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Where to go ?';}" required="">
 									<input type="submit" value=" ">
 								</form>
-						</div> 
+						</div>
 
-				
+
 				</div>
 			</div>
 		<div class="w3agile banner-bottom">
@@ -192,7 +194,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ul>
 			</div>
 	<!-- //banner -->
-	<!--bus-single --> 
+	<!--bus-single -->
             <div class="w3agile single-bus">
 			 <!--- bus-tp ---->
 					<div class="bus-tp">
@@ -206,74 +208,74 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<!--- bus-midd ---->
 <div class="w3agile bus-midd">
   	     <div class="table-responsive">
-		   <table class="table table-bordered agileinfo"> 
+		   <table class="table table-bordered agileinfo">
 	           <thead>
- 			       <tr> 
-					   <th>No</th>  
-					   <th>Train Name</th> 
-					   <th>Depart</th> 
-					   <th>Arrive</th> 
-					   <th>Days of Run</th> 
+ 			       <tr>
+					   <th>No</th>
+					   <th>Train Name</th>
+					   <th>Depart</th>
+					   <th>Arrive</th>
+					   <th>Days of Run</th>
 					   <th>Fare</th>
-				   </tr> 
+				   </tr>
 			  </thead>
 		   <tbody>
 		     <tr>
-			    <th class="t-one" scope="row">1</th> 
+			    <th class="t-one" scope="row">1</th>
 			    <td class="wthree"><i class="fa fa-train" aria-hidden="true"></i> Train 1</td>
- 				<td class="wthree"><i class="fa fa-clock-o"></i>08:10 PM</td> 
-				<td class="wthree">6:10 AM</td> 
-				<td class="seat"> W--T--F</td> 
+ 				<td class="wthree"><i class="fa fa-clock-o"></i>08:10 PM</td>
+				<td class="wthree">6:10 AM</td>
+				<td class="seat"> W--T--F</td>
 				<td class="price us">USD 900
 						<a href="#" data-toggle="modal" data-target="#myModalbook" class="seat-button two">Book Now</a>
-				</td> 
-				
+				</td>
+
 			 </tr>
 			 <tr>
-			    <th class="t-one" scope="row">2</th> 
+			    <th class="t-one" scope="row">2</th>
 			    <td class="wthree"><i class="fa fa-train" aria-hidden="true"></i> Train  2</td>
- 				<td class="wthree"><i class="fa fa-clock-o"></i>6:10 PM</td> 
-				<td class="wthree" >09:10 AM</td> 
-				<td class="seat">T--W--T</td> 
+ 				<td class="wthree"><i class="fa fa-clock-o"></i>6:10 PM</td>
+				<td class="wthree" >09:10 AM</td>
+				<td class="seat">T--W--T</td>
 				<td class="price us">USD 900
 						<a href="#" data-toggle="modal" data-target="#myModalbook" class="seat-button two">Book Now</a>
-				</td> 
-				
+				</td>
+
 			 </tr>
 			 <tr>
-			    <th class="t-one" scope="row">3</th> 
+			    <th class="t-one" scope="row">3</th>
 			    <td class="wthree"><i class="fa fa-train" aria-hidden="true"></i> Train 3</td>
- 				<td class="wthree"><i class="fa fa-clock-o"></i> 08:10 PM</td> 
-				
-				<td class="wthree">6:10 AM</td> 
-				<td class="seat">W--F--S</td> 
+ 				<td class="wthree"><i class="fa fa-clock-o"></i> 08:10 PM</td>
+
+				<td class="wthree">6:10 AM</td>
+				<td class="seat">W--F--S</td>
 				<td class="price us">USD 900
 						<a href="#" data-toggle="modal" data-target="#myModalbook" class="seat-button two">Book Now</a>
-				</td> 
-				
+				</td>
+
 			 </tr>
 			  <tr>
-			    <th class="t-one" scope="row">4</th> 
+			    <th class="t-one" scope="row">4</th>
 			    <td class="wthree"><i class="fa fa-train" aria-hidden="true"></i> Train 4</td>
- 				<td class="wthree"><i class="fa fa-clock-o"></i>07:10 PM</td> 
-				<td class="wthree">9:10 AM</td> 
-				<td class="seat">W--T--F</td> 
+ 				<td class="wthree"><i class="fa fa-clock-o"></i>07:10 PM</td>
+				<td class="wthree">9:10 AM</td>
+				<td class="seat">W--T--F</td>
 				<td class="price us">USD 900
 						<a href="#" data-toggle="modal" data-target="#myModalbook" class="seat-button two">Book Now</a>
-				</td> 
-				
+				</td>
+
 			 </tr>
 			  <tr>
-			    <th class="t-one" scope="row">5</th> 
+			    <th class="t-one" scope="row">5</th>
 			    <td class="wthree"><i class="fa fa-train" aria-hidden="true"></i> Train 5</td>
- 				<td class="wthree"><i class="fa fa-clock-o"></i>05:10 PM</td> 
-				<td class="wthree">7:10 AM</td> 
-				<td class="seat">W--F--S</td> 
+ 				<td class="wthree"><i class="fa fa-clock-o"></i>05:10 PM</td>
+				<td class="wthree">7:10 AM</td>
+				<td class="seat">W--F--S</td>
 				<td class="price us">USD 900
 						<a href="#" data-toggle="modal" data-target="#myModalbook" class="seat-button two">Book Now</a>
-				</td> 
+				</td>
 			  </tr>
-			 </tbody> 
+			 </tbody>
 		</table>
 		</div>
 	</div>
@@ -283,11 +285,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <div class="w3agile footer">
 			<div class="col-md-3 w3agile_footer_grid">
 				<h3>About Us</h3>
-				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
 					voluptatibus.</p>
 				<h3 class="logo"><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
 			</div>
-			<div class="col-md-2 w3agile_footer_grid">	
+			<div class="col-md-2 w3agile_footer_grid">
 				<h3>Links</h3>
 				<ul>
 					<li><a href="main.html">Home</a></li>
@@ -301,7 +303,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				  <ul class="w3agile_footer_grid_list">
 					  <li>Ut aut reiciendis voluptatibus maiores alias, ut aut reiciendis.
 						<span><i class="fa fa-twitter" aria-hidden="true"></i> 02 days ago</span></li>
-					  <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+					  <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
 						voluptatibus.<span><i class="fa fa-twitter" aria-hidden="true"></i> 03 days ago</span></li>
 				  </ul>
 			</div>
@@ -309,7 +311,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h3>Newsletter</h3>
 				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
 				<ul class="social">
-					<form action="#" method="post">			 
+					<form action="#" method="post">
 					  <input type="text" name="Email" placeholder="Enter Email..." required="">
 
 					 <input type="submit" value="Submit">
@@ -367,8 +369,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					midClick: true,
 					removalDelay: 300,
 					mainClass: 'my-mfp-zoom-in'
-				});																							
-			}); 
+				});
+			});
 		</script>
 <!--//pop-up-box -->
  <script src="js/bootstrap.min.js"></script>

@@ -1,3 +1,6 @@
+<?php
+require('secu/plugin-co.php');
+?>
 <!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
@@ -15,7 +18,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <meta charset utf="8">
 <!--font-awsome-css-->
-     <link rel="stylesheet" href="css/font-awesome.min.css"> 
+     <link rel="stylesheet" href="css/font-awesome.min.css">
 <!--bootstrap-->
 	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <!--custom css-->
@@ -32,7 +35,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				$('.menu-link').bigSlide();
 				});
      </script>
-<!-- web-fonts -->  
+<!-- web-fonts -->
   <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
   <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <!-- //web-fonts -->
@@ -50,8 +53,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					midClick: true,
 					removalDelay: 300,
 					mainClass: 'my-mfp-zoom-in'
-				});																							
-			}); 
+				});
+			});
 		</script>
 <!--//pop-up-box -->
     </head>
@@ -72,7 +75,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<li><a class=" link link--yaku active" href="destination.html"><span>D</span><span>e</span><span>s</span><span>t</span><span>i</span><span>n</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a></li>
 								<li><a class=" link link--yaku" href="contact.html"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
 							</div>
-				
+
 
 						</div>
 				</div>
@@ -87,43 +90,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<h5 class="pro-link"><a href="main.html">Travel Hunt</a></h5>
 				</div>
 				<div class="Profile-right">
-					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a> 
+					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a>
 						<!-- modal -->
 					<div id="small-dialog" class="mfp-hide">
-						<div class="login-modal"> 	
+						<div class="login-modal">
 							<div class="booking-info">
 							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
-								
+
 							</div>
 							<div class="login-form">
 								<form action="#" method="post">
 									<p>User Name </p>
 									<input type="text" name="Name" required=""/>
 									<p>User Password</p>
-									<input type="password" name="Password" required=""/>	 
-									<div class="wthree-text"> 
-										<ul> 
+									<input type="password" name="Password" required=""/>
+									<div class="wthree-text">
+										<ul>
 											<li>
 												<input type="checkbox" id="brand" value="">
-												<label for="brand"><span></span> Remember me ?</label>  
+												<label for="brand"><span></span> Remember me ?</label>
 											</li>
 											<li> <a href="#">Forgot password?</a> </li>
 										</ul>
 										<div class="clear"> </div>
-									</div> 
-									<input type="submit" value="Sign In">		
+									</div>
+									<input type="submit" value="Sign In">
 								</form>
 								<p>Don’t have an account ?<a href="#small-dialog1" class="sign-in popup-top-anim"> Sign Up</a></p>
-							</div> 
+							</div>
 						</div>
 					</div>
-					<!-- //modal --> 
+					<!-- //modal -->
 					<!-- modal-two -->
 					<div id="small-dialog1" class="mfp-hide">
-						<div class="login-modal">  
+						<div class="login-modal">
 							<div class="booking-info">
 							   <h3><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
-								
+
 							</div>
 							<div class="login-form signup-form">
 								<form action="#" method="post">
@@ -132,21 +135,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<p>User Email </p>
 									<input type="text" name="Email"  required=""/>
 									<p>User Password</p>
-									<input type="password" name="Password" placeholder="" required=""/>	
-									<div class="wthree-text"> 
+									<input type="password" name="Password" placeholder="" required=""/>
+									<div class="wthree-text">
 										<input type="checkbox" id="brand1" value="">
-										<label for="brand1"><span></span>I accept the terms of use</label> 
+										<label for="brand1"><span></span>I accept the terms of use</label>
 									</div>
-									<input type="submit" value="Sign Up">		
-								</form> 
-							</div> 
+									<input type="submit" value="Sign Up">
+								</form>
+							</div>
 						</div>
 					</div>
-					<!-- //modal-two --> 
-					
+					<!-- //modal-two -->
+
 				</div>
 				<div class="clearfix"></div>
-			</div> 
+			</div>
 <!-- banner -->
    <div class="details-grid gal">
 				<div class="details-shade ">
@@ -154,17 +157,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<img src="images/logo.png" alt=" ">
 							<h3>Top Destinations</h3>
 							<h4>You’re going to like us.</h4>
-								
-							
+
+
 						</div>
 						<div class="banner_search">
-								<form action="#" method="post">			
+								<form action="#" method="post">
 									<input type="search" name="search" value="Where to go ?" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Where to go ?';}" required="">
 									<input type="submit" value=" ">
 								</form>
-						</div> 
+						</div>
 
-				
+
 				</div>
 			</div>
 		<div class="w3agile banner-bottom">
@@ -176,7 +179,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</ul>
 			</div>
 	<!-- //banner -->
-	<!-- portfolio --> 
+	<!-- portfolio -->
 	<div id="portfolio" class="portfolio w3agile">
 		<div class="container">
 			<h3 class="w3ls-title">Destinations</h3>
@@ -191,61 +194,61 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="Busy streets">
 						<div class="agileits-img">
 							<a href="images/d1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-								<img class="img-responsive img-style row2" src="images/d1.jpg" alt=""  /> 
-							</a> 
+								<img class="img-responsive img-style row2" src="images/d1.jpg" alt=""  />
+							</a>
 						</div>
 					</div>
 					<div class="col-md-4 filtr-item" data-category="2, 3" data-sort="Luminous night">
 						<div class="agileits-img">
 							<a href="images/d2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
 								<img src="images/d2.jpg" alt="" class="img-responsive img-style row2" />
-							</a>	
+							</a>
 						</div>
 					</div>
 					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="City wonders">
 						<div class="agileits-img">
 							<a href="images/d3.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
 								<img src="images/d3.jpg" alt="" class="img-responsive img-style row2" />
-							</a>	
+							</a>
 						</div>
 					</div>
 					<div class="col-md-4 filtr-item" data-category="3, 4" data-sort="Industrial site">
 						<div class="agileits-img">
 							<a href="images/d4.jpg" class="swipebox" title="Praesent non purus fermentum, eleifend velit non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis.">
 								<img src="images/d4.jpg" alt="" class="img-responsive img-style row2" />
-							</a>	
+							</a>
 						</div>
 					</div>
 					<div class="col-md-4 filtr-item" data-category="3" data-sort="In production">
 						<div class="agileits-img">
 							<a href="images/d5.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
 								<img src="images/d5.jpg" alt="" class="img-responsive img-style row2" />
-							</a>	
+							</a>
 						</div>
 					</div>
 					<div class="col-md-4 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
 						<div class="agileits-img">
 							<a href="images/d6.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
 								<img src="images/d6.jpg" alt="" class="img-responsive img-style row2" />
-							</a>	
+							</a>
 						</div>
 					</div>
 				   <div class="clearfix"> </div>
 				</div>
 			</div>
-		</div>  
-	</div>    
+		</div>
+	</div>
 	<!-- //portfolio-->
 
 		<!--/footer-->
     <div class="w3agile footer">
 			<div class="col-md-3 w3agile_footer_grid">
 				<h3>About Us</h3>
-				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
 					voluptatibus.</p>
 				<h3 class="logo"><a href="main.html">T<span>r</span>a<span>v</span>e<span>l</span> <span>H</span>u<span>n</span>t</a></h3>
 			</div>
-			<div class="col-md-2 w3agile_footer_grid">	
+			<div class="col-md-2 w3agile_footer_grid">
 				<h3>Links</h3>
 				<ul>
 					<li><a href="main.html">Home</a></li>
@@ -259,14 +262,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<ul class="w3agile_footer_grid_list">
 					<li>Ut aut reiciendis voluptatibus maiores alias, ut aut reiciendis.
 						<span><i class="fa fa-twitter" aria-hidden="true"></i> 02 days ago</span></li>
-					<li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis 
+					<li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
 						voluptatibus.<span><i class="fa fa-twitter" aria-hidden="true"></i> 03 days ago</span></li>
 				</ul>
 			</div>
 			<div class="col-md-3 w3agile_footer_grid">
 				<h3>Newsletter</h3>
 				<p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus.</p>
-					<form action="#" method="post">			 
+					<form action="#" method="post">
 					   <input type="text" name="Email" placeholder="Enter Email..." required="">
 
 					   <input type="submit" value="Submit">
@@ -309,7 +312,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--/footer-->
 	</div>
 </div>
-	<script src="jS/jquery.filterizr.js"></script>  
+	<script src="jS/jquery.filterizr.js"></script>
 	<script src="js/controls.js"></script>
 	<!-- Kick off Filterizr -->
 	<script type="text/javascript">
@@ -317,24 +320,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			//Initialize filterizr with default options
 			$('.filtr-container').filterizr();
 		});
-	</script>	
+	</script>
 	<!-- swipe box js -->
-	<script src="js/jquery.swipebox.min.js"></script> 
+	<script src="js/jquery.swipebox.min.js"></script>
 	<script type="text/javascript">
 			jQuery(function($) {
 				$(".swipebox").swipebox();
 			});
 	</script>
-	<!-- //swipe box js --> 
+	<!-- //swipe box js -->
 		<script src="js/jquery.adipoli.min.js" type="text/javascript"></script>
-	<script type="text/javascript"> 
-		$(function(){ 
+	<script type="text/javascript">
+		$(function(){
 			$('.row2').adipoli({
 				'startEffect' : 'overlay',
 				'hoverEffect' : 'sliceDown'
-			}); 
+			});
 		});
-		
+
 	</script>
 
 <script src="js/jquery.nicescroll.js"></script>

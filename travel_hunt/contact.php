@@ -1,3 +1,6 @@
+<?php
+require('secu/plugin-co.php');
+?>
 <!DOCTYPE html>
 
 <html lang="en">

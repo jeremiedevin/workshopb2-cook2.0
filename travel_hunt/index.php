@@ -1,4 +1,6 @@
-
+<?php
+require('secu/plugin-co.php');
+?>
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -45,7 +47,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	  $(document).ready(function() {
 
 		var nice = $("html").niceScroll();  // The document page (body)
-		
+
 		$("#div1").html($("#div1").html()+' '+nice.version);
 
 		$("#boxscroll").niceScroll(); // First scrollable DIV
