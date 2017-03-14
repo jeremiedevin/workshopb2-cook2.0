@@ -13,7 +13,7 @@
 
     <!-- connexion -->
 
-    <div>
+    <div class="col-sm-8" style="margin-left:16%;margin-right:16%;">
       <form>
         <div class="input-group">
           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -26,7 +26,7 @@
       <div class="checkbox">
       <label><input type="checkbox"> Remember me</label>
       </div>
-      <button type="submit" class="btn btn-default">Submit</button>
+      <button type="submit" class="btn btn-default">Se connecter</button>
   </form>
     </div>
 
