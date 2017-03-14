@@ -96,7 +96,7 @@ require('secu/plugin-co.php');
 
 							</div>
 							<div class="login-form">
-								<form action="#" method="post">
+								<form action="main.php?type=connexion" method="post">
 									<p>User Name </p>
 									<input type="text" name="Name" required=""/>
 									<p>User Password</p>
@@ -118,6 +118,7 @@ require('secu/plugin-co.php');
 						</div>
 					</div>
 					<!-- //modal -->
+
 					<!-- modal-two inscription-->
 					<div id="small-dialog1" class="mfp-hide">
 						<div class="login-modal">
@@ -126,7 +127,7 @@ require('secu/plugin-co.php');
 
 							</div>
 							<div class="login-form signup-form">
-								<form action="#" method="post">
+								<form action="main.php?type=inscription" method="post">
 									<p>User Name </p>
 									<input type="text" name="Name"  required=""/>
 									<p>User Email </p>
