@@ -17,7 +17,7 @@ function successCallback(position){
 };
 
 function errorCallback(error){
-<<<<<<< Updated upstream
+
   switch(error.code){
   case error.PERMISSION_DENIED:
       alert("L'utilisateur n'a pas autorisé l'accès à sa position");
@@ -29,7 +29,7 @@ function errorCallback(error){
       alert("Le service n'a pas répondu à temps");
       break;
   }
-=======
+
 switch(error.code){
   case error.PERMISSION_DENIED:
       alert("L'utilisateur n'a pas autorisé l'accès à sa position");
@@ -41,7 +41,7 @@ switch(error.code){
       alert("Le service n'a pas répondu à temps");
     break;
 }
->>>>>>> Stashed changes
+
 };
 
 var myCenter=new google.maps.LatLng(47.213084,-1.552989);
