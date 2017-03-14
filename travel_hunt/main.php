@@ -134,7 +134,6 @@ require('secu/plugin-co.php');
 									<input type="text" name="email"  required=""/>
 									<p>Votre mot de passe</p>
 									<input type="password" name="password1" placeholder="" required=""/>
-                  <input type="password" name="password2" placeholder="" required=""/>
 									<div class="wthree-text">
 										<input type="checkbox" name="accept" id="brand1" value="">
 										<label for="brand1"><span></span>I accept the terms of use</label>
