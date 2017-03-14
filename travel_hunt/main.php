@@ -60,14 +60,7 @@ require('secu/plugin-co.php');
 					<img class="border-effect" src="images/logo.png" alt=" ">
 						<h3>MENU</h3>
 
-						<div class="pro-menu">
-							<div class="logo">
-								<li><a class=" link link--yaku  active" href="main.php"><span>H</span><span>o</span><span>m</span><span>e</span></a></li>
-								<li><a class=" link link--yaku" href="about.php"><span>A</span><span>b</span><span>o</span><span>u</span><span>t</span></a></li>
-								<li><a class=" link link--yaku" href="short-codes.php"><span>S</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span></a></li>
-								<li><a class=" link link--yaku" href="destination.php"><span>D</span><span>e</span><span>s</span><span>t</span><span>i</span><span>n</span><span>a</span><span>t</span><span>i</span><span>o</span><span>n</span><span>s</span></a></li>
-								<li><a class=" link link--yaku" href="contact.php"><span>C</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span></a></li>
-							</div>
+						<?php require('menu.php'); ?>
 
 
 						</div>

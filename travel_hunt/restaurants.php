@@ -178,14 +178,13 @@ require('secu/plugin-co.php');
 					<li data-filter="3">Category 3</li>
 				</ul>
 				<div class="filtr-container">
-
-          <?php
-
-            require('Controller/visites.php');
-
-          ?>
-
-
+					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="Busy streets">
+						<div class="agileits-img">
+							<a href="images/d1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
+								<img class="img-responsive img-style row2" src="images/d1.jpg" alt=""  />
+							</a>
+						</div>
+					</div>
 					<div class="col-md-4 filtr-item" data-category="2, 3" data-sort="Luminous night">
 						<div class="agileits-img">
 							<a href="images/d2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
