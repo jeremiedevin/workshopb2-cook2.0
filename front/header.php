@@ -74,9 +74,13 @@ google.maps.event.addListener(marker, 'click', function() {
 google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <div id="googleMap" style="height:450px;"></div>
+<div class="container">
+<div class="carousel-caption">
+  <a class="btn btn-lg btn-default" href="#" role="button" style="font-size:2em">Commandez dès maintenant en ligne &raquo;</a>
+</div>
+
   <div class="container">
     <div class="carousel-caption">
       <!--<a class="btn btn-lg btn-default" href="#" role="button" style="font-size:2em">Commandez dès maintenant en ligne &raquo;</a>-->
     </div>
-  </div>
-</div>
+  </div>
