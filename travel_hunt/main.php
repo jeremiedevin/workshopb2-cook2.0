@@ -84,7 +84,11 @@ require('secu/plugin-co.php');
 				</div>
 				<div class="Profile-right">
 					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a>
-						<!-- modal -->
+
+
+
+
+						<!-- modal connexion-->
 					<div id="small-dialog" class="mfp-hide">
 						<div class="login-modal">
 							<div class="booking-info">
@@ -114,7 +118,7 @@ require('secu/plugin-co.php');
 						</div>
 					</div>
 					<!-- //modal -->
-					<!-- modal-two -->
+					<!-- modal-two inscription-->
 					<div id="small-dialog1" class="mfp-hide">
 						<div class="login-modal">
 							<div class="booking-info">
@@ -139,6 +143,10 @@ require('secu/plugin-co.php');
 						</div>
 					</div>
 					<!-- //modal-two -->
+
+
+
+
 
 				</div>
 				<div class="clearfix"></div>
