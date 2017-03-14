@@ -9,7 +9,20 @@
       <li><a href="visites.php">Visites</a></li>
       <li><a href="restaurants.php">Restaurants</a></li>
     </ul>
-    <button style="float:right" class="btn btn-danger navbar-btn"><a href="connexion.php">Connexion/Inscription</a></button>
+    <?php
+      if (isset($_SESSION['mail'])) {
+        $sql="SELECT username FROM user WHERE mail=(?)";
+        $findUser=connexionBDD()->prepare($sql);
+        $findUser->execute(array($_SESSION['mail']));
+        while($findUsername = $findUser -> fetch()) {
+            $username=$findUsername['username'];
+        }
+        echo "<a href='moncompte.php' style='float:right' class='btn btn-danger navbar-btn'><i class='fa fa-user'> </i> ".$username."</a>";
+      }
+      else{
+        echo "<a href='connexion.php' style='float:right' class='btn btn-danger navbar-btn'><i class='fa fa-user'> </i> Connexion/Inscription</a>";
+      }
+    ?>
   </div>
 
 

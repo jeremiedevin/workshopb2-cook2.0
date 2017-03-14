@@ -2,7 +2,7 @@
 require('secu/pluginCO.php');
 
 $affichageVisites="";
-$sql="SELECT * FROM visites";
+$sql="SELECT * FROM produit WHERE id_typeproduit=2";
 $result=connexionBDD()->query($sql);
 while($row = $result -> fetch()){
   $id=$row['id'];
@@ -30,7 +30,7 @@ while($row = $result -> fetch()){
 
     <?php require('menu.php'); ?>
 
-    <?php require('header.php'); ?>
+    <?php //require('header.php'); ?>
 
     <?php echo $affichageVisites; ?>
 

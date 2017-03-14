@@ -2,7 +2,7 @@
 require('secu/pluginCO.php');
 
 $affichageVisites="";
-$sql="SELECT * FROM restaurants";
+$sql="SELECT * FROM produit WHERE id_typeproduit=1";
 $result=connexionBDD()->query($sql);
 while($row = $result -> fetch()){
   $id=$row['id'];
