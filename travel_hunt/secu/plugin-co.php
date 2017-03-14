@@ -1,4 +1,5 @@
 <?php
+session_start();
 function connexionAdmin(){
   $dbhost = "localhost";
   $dbname = "id1066945_kegroupeepsi";
@@ -29,16 +30,40 @@ if (isset($_GET['type'])) {
       $sql="INSERT INTO user(username,mail,password) VALUES (?,?,?)";
       $traitement=connexionAdmin()->prepare($sql);
       $traitement->execute(array($username,$mail,password_hash($password, PASSWORD_DEFAULT)));
-
+      header('location:main.php');
       break;
+
     case 'connexion':
-      # code...
+      $username=$_POST['name_user'];
+      $password=$_POST['password'];
+
+      $sql="SELECT password FROM user WHERE username=(?)";
+      $result=connexionAdmin()->prepare($sql);
+      $result->execute(array($username));
+      while($resultat=$result->fetch()){
+        $password_bdd=$resultat['password'];
+      }
+      if (isset($password_bdd)) {
+        if (password_verify($password,$password_bdd)) {
+          $_SESSION['username']=$username;
+        }
+        else{
+          // message d'erreur mot de passe incorrect
+        }
+      }
+      else{
+        // message d'erreur username does not exist
+      }
+      header('location:main.php');
       break;
 
     default:
       # code...
       break;
   }
+}
+else{
+  // rien , type n'est pas set
 }
 
 

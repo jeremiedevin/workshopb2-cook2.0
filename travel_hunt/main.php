@@ -83,7 +83,13 @@ require('secu/plugin-co.php');
 					<h5 class="pro-link"><a href="main.php">Viz'Eat By K&E</a></h5>
 				</div>
 				<div class="Profile-right">
-					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i></a>
+					<a href="#small-dialog" class="sign-in popup-top-anim"> <i class="fa fa-user"></i>
+          </a>
+            <?php
+            if (isset($_SESSION['username'])) {
+              echo "<a href='moncompte.php'>".$_SESSION['username']."</a>";
+            }
+             ?>
 
 
 
@@ -97,10 +103,10 @@ require('secu/plugin-co.php');
 							</div>
 							<div class="login-form">
 								<form action="main.php?type=connexion" method="post">
-									<p>User Name </p>
-									<input type="text" name="Name" required=""/>
-									<p>User Password</p>
-									<input type="password" name="Password" required=""/>
+									<p>Votre nom d'utilisateur </p>
+									<input type="text" name="name_user" required=""/>
+									<p>Votre mot de passe</p>
+									<input type="password" name="password" required=""/>
 									<div class="wthree-text">
 										<ul>
 											<li>
