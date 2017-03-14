@@ -128,14 +128,15 @@ require('secu/plugin-co.php');
 							</div>
 							<div class="login-form signup-form">
 								<form action="main.php?type=inscription" method="post">
-									<p>User Name </p>
-									<input type="text" name="Name"  required=""/>
-									<p>User Email </p>
-									<input type="text" name="Email"  required=""/>
-									<p>User Password</p>
-									<input type="password" name="Password" placeholder="" required=""/>
+									<p>Votre nom d'utilisateur</p>
+									<input type="text" name="name_user"  required=""/>
+									<p>Votre mail</p>
+									<input type="text" name="email"  required=""/>
+									<p>Votre mot de passe</p>
+									<input type="password" name="password1" placeholder="" required=""/>
+                  <input type="password" name="password2" placeholder="" required=""/>
 									<div class="wthree-text">
-										<input type="checkbox" id="brand1" value="">
+										<input type="checkbox" name="accept" id="brand1" value="">
 										<label for="brand1"><span></span>I accept the terms of use</label>
 									</div>
 									<input type="submit" value="Sign Up">
