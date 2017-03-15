@@ -8,12 +8,14 @@ while($row = $result -> fetch()){
   $id=$row['id'];
   $nom=$row['nom'];
   $image=$row['image'];
+  $prix=$row['prix'];
   $description=$row['description'];
   $affichageVisites.="<div class='col-sm-6' style='border:1px solid grey;text-align:center;'>";
   $affichageVisites.="<h2>".$nom."</h2><figure class='figure'>";
   $affichageVisites.="<img style='width:50%;' src='images/restos/".$image."' class='figure-img img-fluid rounded' alt='".$nom."'>";
   $affichageVisites.="<figcaption class='figure-caption'>".$description."</figcaption>";
   $affichageVisites.="</figure>";
+  $affichageVisites.="".$prix."€";
   $affichageVisites.="<br><a href='panier.php?produit=".$id."'><button class='' value=''><i class='fa fa-shopping-cart' aria-hidden='true'></i> Ajouter au panier</button></a><br>";
   $affichageVisites.="</div>";
 }

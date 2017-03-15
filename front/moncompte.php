@@ -1,5 +1,7 @@
 <?php
-require('secu/pluginCO.php'); ?>
+require('secu/pluginCO.php');
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -10,16 +12,37 @@ require('secu/pluginCO.php'); ?>
   <body>
 
     <?php require('menu.php'); ?>
+
 <div>
 <h3>Informations de compte:</h3>
+<?php
+  if (isset($_SESSION['mail'])) {
+    $sql="SELECT * FROM user WHERE mail=(?)";
+    $findUser=connexionBDD()->prepare($sql);
+    $findUser->execute(array($_SESSION['mail']));
+    while($findUsername = $findUser -> fetch()) {
+        $username=$findUsername['username'];
+        $usermail=$findUsername['mail'];
 
+    }
+    echo "Nom d'utilisateur: ".$username."<br/>";
+
+    echo "Mail: ".$usermail."<br/>";
+
+  }
+  else{
+    echo "Error, information missing";
+  }
+?>
 </div>
 
 <!--bouton de deco avec un style... pas tarrible-->
 <?php
   if (!empty($_GET['act'])) {
   session_destroy();
-  } else {
+  header('Location: index.php');
+  }
+  else {
 ?>
 <form action="moncompte.php" method="get">
   <input type="hidden" name="act" value="run">
@@ -28,6 +51,8 @@ require('secu/pluginCO.php'); ?>
 <?php
   }
 ?>
+<!--Fin du bouton de deco-->
+
     <?php require('footer.php') ?>
 
   </body>
