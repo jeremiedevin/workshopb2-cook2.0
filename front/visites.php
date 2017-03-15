@@ -30,7 +30,7 @@ while($row = $result -> fetch()){
 
     <?php require('menu.php'); ?>
 
-    <?php //require('header.php'); ?>
+    <?php require('header.php'); ?>
 
     <?php echo $affichageVisites; ?>
 

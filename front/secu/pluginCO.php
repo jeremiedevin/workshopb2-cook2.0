@@ -60,7 +60,7 @@ else{
     }
   }
   else{
-    header('location:connexion.php');
+    //header('location:connexion.php');  //ce header pose problème de redirection en boucle
   }
 }
 

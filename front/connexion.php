@@ -35,7 +35,7 @@ require('secu/pluginCO.php');
       <a class="btn btn-lg btn-primary" href="inscription.php">Pas encore de compte ? Inscrivez-vous ICI.</a>
     </div>
 
-
+    
     <?php require('footer.php') ?>
 
   </body>
