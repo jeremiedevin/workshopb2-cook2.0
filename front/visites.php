@@ -22,6 +22,7 @@ while($row = $result -> fetch()){
 
 ?>
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -35,6 +36,16 @@ while($row = $result -> fetch()){
     <?php require('header.php'); ?>
 
     <?php echo $affichageVisites; ?>
+    <!--DEBUT test manu pour changer emplacement du marker googlemap-->
+<button onclick="changeMarkerPosition(marker)">Click me to change map marker</button>
+<script lang="javascript">
+    function changeMarkerPosition(marker) {
+        var latlng = new google.maps.LatLng(-24.397, 140.644);
+        marker.setPosition(latlng);
+    }
+</script>
+    <!--FIN test manu pour changer emplacement du marker googlemap-->
 
+</script>
   </body>
 </html>

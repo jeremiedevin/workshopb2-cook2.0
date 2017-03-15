@@ -2,6 +2,7 @@
 
 require('secu/pluginCO.php');
 $_SESSION['mail']='jeremie.devin@epsi.fr';
+//$_SESSION['mail']='Cacahuete';
 if (isset($_SESSION['mail'])) {
 
   $sql="SELECT id FROM user WHERE mail=(?)";
