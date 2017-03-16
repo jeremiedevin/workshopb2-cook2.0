@@ -25,7 +25,43 @@ if (isset($_SESSION['mail'])) {
     }
     else{
       if (isset($_GET['ajouttheme'])) {
-        var_dump($_POST);
+        $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
+        $result=connexionBDD()->prepare($sql);
+        $result->execute(array($id_client));
+        while($results = $result -> fetch()) {
+            $panier_decode=json_decode($results['panier_json'],true);
+        }
+        for ($i=1; $i <= max(array_keys($_POST)); $i++) {
+          $sql="SELECT * FROM produit WHERE id=(?)";
+          $traitement=connexionBDD()->prepare($sql);
+          $traitement->execute(array($_POST[$i]));
+          while($traitements = $traitement -> fetch()) {
+            $idProduit=$traitements['id'];
+            $qteProduit=1;
+            $prixProduit=$traitements['prix'];
+          }
+          $positionProduit = array_search($_POST[$i],$panier_decode['produit']);
+        $qteProduit=1;
+        if ($positionProduit !== false)
+        {
+           $panier_decode['qte'][$positionProduit]+=$qteProduit;
+           //$panier_decode['qte'][$positionProduit]=(string)$panier_decode['qte'][$positionProduit];
+        }
+        else
+        {
+           //Sinon on ajoute le produit
+           array_push($panier_decode['produit'],$idProduit);
+           array_push($panier_decode['qte'],$qteProduit);
+           array_push($panier_decode['prix'],$prixProduit);
+        }
+          $panier_encode=json_encode($panier_decode,true);
+
+          $sql="UPDATE panier SET panier_json=(?)";
+          $update=connexionBDD()->prepare($sql);
+          $update->execute(array($panier_encode));
+          header('location:panier.php');
+        }
+
       }
       if (isset($_GET['produit'])) {
         // ajout d'un article
