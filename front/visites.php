@@ -16,7 +16,7 @@ while($row = $result -> fetch()){
   $affichageVisites.="<figcaption class='figure-caption'>".$description."</figcaption>";
   $affichageVisites.="</figure>";
   $affichageVisites.="".$prix."€";
-  $affichageVisites.="<br><a href='panier.php?produit=".$id."'><button class='' value=''><i class='fa fa-shopping-cart' aria-hidden='true'></i> Ajouter au panier</button></a><br>";
+  $affichageVisites.="<br><a href='panier.php?produit=".$id."'><i class='fa fa-shopping-cart' aria-hidden='true'></i> Ajouter au panier</a><br>";
   $affichageVisites.="</div>";
 }
 

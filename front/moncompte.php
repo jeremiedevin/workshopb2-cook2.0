@@ -24,7 +24,7 @@ require('secu/pluginCO.php');
       }
       else {
     ?>
-    <form action="moncompte.php?deco" method="get">
+    <form action="moncompte.php?deco" method="post">
       <input type="hidden" name="act" value="run">
       <input type="submit" value="Déconnexion" class="form-control">
     </form>

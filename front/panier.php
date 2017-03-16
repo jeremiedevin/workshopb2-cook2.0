@@ -1,8 +1,6 @@
 <?php
 
 require('secu/pluginCO.php');
-$_SESSION['mail']='jeremie.devin@epsi.fr';
-//$_SESSION['mail']='Cacahuete';
 if (isset($_SESSION['mail'])) {
 
   $sql="SELECT id FROM user WHERE mail=(?)";
@@ -120,8 +118,10 @@ if (isset($_SESSION['mail'])) {
                 $nomproduit=$results['nom'];
                 $prixproduit=$results['prix'];
             }
-            $panier.="<tr><td>".$nomproduit."</td><td><form method='post' action='panier.php?modifProduit=".$panier_decode['produit'][$i]."'><input type='number' name='new_qte' value='".$panier_decode['qte'][$i]."'><input value='Modifier' type='submit'></form></td><td>".$prixproduit." € </td></tr>";
-            $total+=$panier_decode['qte'][$i]*$prixproduit;
+            if (isset($nomproduit) && isset($prixproduit)) {
+              $panier.="<tr><td>".$nomproduit."</td><td><form method='post' action='panier.php?modifProduit=".$panier_decode['produit'][$i]."'><input type='number' name='new_qte' value='".$panier_decode['qte'][$i]."'><input value='Modifier' type='submit'></form></td><td>".$prixproduit." € </td></tr>";
+              $total+=$panier_decode['qte'][$i]*$prixproduit;
+            }
           }
           $panier.="<tr><th colspan='2'>Total : </th><th>".$total." € </th></tr></table>";
         }
