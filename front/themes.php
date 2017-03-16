@@ -11,7 +11,7 @@ else{
   $affichageTheme="<div class='col-sm-10'><form method='post' action='panier.php?ajouttheme'>";
   for ($i=1; $i <= $count; $i++) {
     $affichageTheme.="<div>Thème : ".$i."</div>";
-    $sql="SELECT * FROM produit WHERE id_theme=(?)";
+    $sql="SELECT * FROM produit WHERE id_typeproduit=1 AND id_theme=(?)";
     $result=connexionBDD()->prepare($sql);
     $result->execute(array($i));
     while($row=$result->fetch()){
@@ -26,7 +26,7 @@ else{
       $affichageTheme.="</figure><br>";
       $affichageTheme.="<input name='".$id."' value='".$id."' type='checkbox'></div>";
     }
-    $sql="SELECT * FROM produit WHERE id_theme=(?)";
+    $sql="SELECT * FROM produit WHERE id_typeproduit=2 and id_theme=(?)";
     $result=connexionBDD()->prepare($sql);
     $result->execute(array($i));
     while($row = $result -> fetch()){
@@ -43,7 +43,7 @@ else{
     }
   }
   $affichageTheme.="</div><div class='col-sm-12' style='text-align:center;margin-top:8vh;margin-bottom:3vh;'>";
-  $affichageTheme.="<select name='nbperson' required><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option></select>";
+  $affichageTheme.="<select required><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option></select>";
   $affichageTheme.="<input class='btn btn-lg btn-primary' type='submit' value='Ajouter au panier'></form></div>";
 }
 
