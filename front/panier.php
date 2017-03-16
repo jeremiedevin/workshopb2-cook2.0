@@ -43,10 +43,20 @@ if (isset($_SESSION['mail'])) {
           $qteProduit=1;
           $prixProduit=$traitements['prix'];
         }
-        array_push($panier_decode['produit'],$idProduit);
-        array_push($panier_decode['qte'],$qteProduit);
-        array_push($panier_decode['prix'],$prixProduit);
-
+        $positionProduit = array_search($_GET['produit'],$panier_decode['produit']);
+      $qteProduit=1;
+      if ($positionProduit !== false)
+      {
+         $panier_decode['qte'][$positionProduit]+=$qteProduit;
+         //$panier_decode['qte'][$positionProduit]=(string)$panier_decode['qte'][$positionProduit];
+      }
+      else
+      {
+         //Sinon on ajoute le produit
+         array_push($panier_decode['produit'],$idProduit);
+         array_push($panier_decode['qte'],$qteProduit);
+         array_push($panier_decode['prix'],$prixProduit);
+      }
         $panier_encode=json_encode($panier_decode,true);
 
         $sql="UPDATE panier SET panier_json=(?)";
@@ -55,28 +65,66 @@ if (isset($_SESSION['mail'])) {
         header('location:panier.php');
       }
       else{
-        // affichage du panier
-        $total="";
-        $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
-        $result=connexionBDD()->prepare($sql);
-        $result->execute(array($id_client));
-        while($results = $result -> fetch()) {
-          $panier_decode=json_decode($results['panier_json'],true);
-        }
-        $panier="<table class='table'><tr><th>Produit</th><th>Quantité</th><th>Prix</th></tr>";
-        $panier.="<tr>";
-        for ($i=0; $i <= max(array_keys($panier_decode['produit'])); $i++) {
-          $sql="SELECT nom,prix FROM produit WHERE id=(?)";
+        if (isset($_GET['modifProduit'])) {
+          // modification des quantités produits (nombre personnes)
+          $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
           $result=connexionBDD()->prepare($sql);
-          $result->execute(array($panier_decode['produit'][$i]));
+          $result->execute(array($id_client));
           while($results = $result -> fetch()) {
-              $nomproduit=$results['nom'];
-              $prixproduit=$results['prix'];
+            $panier_decode=json_decode($results['panier_json'],true);
           }
-          $panier.="<tr><td>".$nomproduit."</td><td>".$panier_decode['qte'][$i]."</td><td>".$prixproduit." € </td></tr>";
-          $total+=$panier_decode['qte'][$i]*$prixproduit;
+          $sql="UPDATE panier SET panier_json=(?) WHERE id_client=(?)";
+          $update=connexionBDD()->prepare($sql);
+          $positionProduit = array_search($_GET['modifProduit'],$panier_decode['produit']);
+
+                            if ($panier_decode['qte'][$positionProduit]==$_POST['new_qte']) {
+                        // si la quantité est la même on change rien
+                      }
+                      else{
+                        if ($positionProduit !== false)
+                        {
+                          if ($_POST['new_qte']>0) {
+                            $panier_decode['qte'][$positionProduit]=$_POST['new_qte'];
+                          }
+                          else{
+                            $panier_decode['qte'][$positionProduit]=$panier_decode['qte'][$positionProduit];
+                          }
+
+                        }
+                        else
+                        {
+                          // erreur , produit pas dans le tableau
+                        }
+                      }
+
+          $new_panier=json_encode($panier_decode,true);
+          $update->execute(array($new_panier,$id_client));
+          header('location:panier.php');
         }
-        $panier.="<tr><th colspan='2'>Total : </th><th>".$total." € </th></tr></table>";
+        else{
+          // affichage du panier
+          $total="";
+          $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
+          $result=connexionBDD()->prepare($sql);
+          $result->execute(array($id_client));
+          while($results = $result -> fetch()) {
+            $panier_decode=json_decode($results['panier_json'],true);
+          }
+          $panier="<table class='table'><tr><th>Produit</th><th>Nombre de personnes</th><th>Prix</th></tr>";
+          $panier.="<tr>";
+          for ($i=0; $i <= max(array_keys($panier_decode['produit'])); $i++) {
+            $sql="SELECT nom,prix FROM produit WHERE id=(?)";
+            $result=connexionBDD()->prepare($sql);
+            $result->execute(array($panier_decode['produit'][$i]));
+            while($results = $result -> fetch()) {
+                $nomproduit=$results['nom'];
+                $prixproduit=$results['prix'];
+            }
+            $panier.="<tr><td>".$nomproduit."</td><td><form method='post' action='panier.php?modifProduit=".$panier_decode['produit'][$i]."'><input type='number' name='new_qte' value='".$panier_decode['qte'][$i]."'><input value='Modifier' type='submit'></form></td><td>".$prixproduit." € </td></tr>";
+            $total+=$panier_decode['qte'][$i]*$prixproduit;
+          }
+          $panier.="<tr><th colspan='2'>Total : </th><th>".$total." € </th></tr></table>";
+        }
       }
     }
   }

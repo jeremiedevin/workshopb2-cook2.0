@@ -13,7 +13,28 @@ require('secu/pluginCO.php');
 
     <?php require('menu.php'); ?>
 
-<div>
+
+
+    <div class="col-sm-12">
+    <!--bouton de deco avec un style... pas tarrible-->
+    <?php
+      if (isset($_GET['deco']) && $_POST['act']) {
+      session_destroy();
+      header('Location: index.php');
+      }
+      else {
+    ?>
+    <form action="moncompte.php?deco" method="get">
+      <input type="hidden" name="act" value="run">
+      <input type="submit" value="Déconnexion" class="form-control">
+    </form>
+    <?php
+      }
+    ?>
+    <!--Fin du bouton de deco-->
+    </div>
+
+<div class="col-sm-12">
 <h3>Informations de compte:</h3>
 <?php
   if (isset($_SESSION['mail'])) {
@@ -35,23 +56,6 @@ require('secu/pluginCO.php');
   }
 ?>
 </div>
-
-<!--bouton de deco avec un style... pas tarrible-->
-<?php
-  if (!empty($_GET['act'])) {
-  session_destroy();
-  header('Location: index.php');
-  }
-  else {
-?>
-<form action="moncompte.php" method="get">
-  <input type="hidden" name="act" value="run">
-  <input type="submit" value="Deconnexion" class="form-control">
-</form>
-<?php
-  }
-?>
-<!--Fin du bouton de deco-->
 
     <?php require('footer.php') ?>
 

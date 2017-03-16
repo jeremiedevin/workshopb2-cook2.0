@@ -19,10 +19,10 @@
         }
         echo "<a href='moncompte.php' style='float:right' class='btn btn-danger navbar-btn'><i class='fa fa-user'> </i> ".$username."</a>";
 
-        echo "<a href='panier.php' style='float:right' class='btn btn-danger navbar-btn'><i class='glyphicon glyphicon-shopping-cart'></i> Panier</a>";  //glyphicon glyphicon-shopping-cart
+        echo "<a href='panier.php' style='float:right' class='btn btn-success navbar-btn'><i class='glyphicon glyphicon-shopping-cart'></i> Panier</a>";  //glyphicon glyphicon-shopping-cart
       }
       else{
-        echo "<a href='connexion.php' style='float:right' class='btn btn-danger navbar-btn'><i class='fa fa-user'> </i> Connexion/Inscription</a>";
+        echo "<a href='connexion.php' style='float:right' class='btn btn-warning navbar-btn'><i class='fa fa-user'> </i> Connexion/Inscription</a>";
       }
     ?>
   </div>
