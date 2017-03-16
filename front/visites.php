@@ -35,9 +35,7 @@ while($row = $result -> fetch()){
 
     <?php require('header.php'); ?>
 
-    <?php echo $affichageVisites; ?>
-
-    <div class="col-sm-6">
+    <div class="col-sm-12">
     <!--DEBUT test manu pour changer emplacement du marker googlemap-->
 <button onclick="changeMarkerPosition(marker)">Click me to change map marker</button>
 <script lang="javascript">
@@ -48,6 +46,12 @@ while($row = $result -> fetch()){
 </script>
     <!--FIN test manu pour changer emplacement du marker googlemap-->
   </div>
+  <br><br>
+
+    <div class="col-sm-12">
+      <?php echo $affichageVisites; ?>
+    </div>
+
 
 </script>
   </body>
