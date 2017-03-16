@@ -19,13 +19,13 @@
 <p align="left">
   <br>
   <hr size="1" color="grey">
-  <h1><font face="orkney" color="grey">Découvrez les merveilles de Paris</font></h1>
+  <h1 class="paris">Découvrez les merveilles de Paris</h1>
   <hr size="1" color="grey">
   <br>
 </p>
 </div>
 
-<div>
+<div class="textbot">
 <h2>Créez votre parcours</h2>
 Créez votre <strong>parcours</strong> en sélectionnant les <strong>lieux, musées ou monuments</strong> ainsi que les <strong>restaurants</strong> que vous voulez pour vous concocter le parcours qui vous plait le plus. Vous voulez un chauffeur pour vous amener à votre prochaine destination ? Nous disposons d’un service privé de <strong>voituriers</strong>. Dites nous où vous souhaitez vous rendre, et Viz’eat bye K&E vous y amène en deux coups de cuillère à pot.
 
@@ -40,7 +40,7 @@ Viz’eat by K&E c’est le service qui va changer votre manière de visiter Par
 Vous cherchez à visiter Paris d’une autre manière ? Les guides de voyages vous paraissent ennuyants ? Alors Viz’eat by K&E est fait pour vous. Nous vous proposons deux choix, vous créez votre parcours ou vous optez pour un parcours prédéfini.
 </div>
 <br>
-<img id="logo" src="images\accueil\bannerbot.png" height="70%" width="70%">
+<img id="bot" src="images\accueil\bannerbot.png" height="70%" width="70%">
 <!-- ANCIENNE BANNIERE
 
 <div class="col-sm-12" align="center">
