@@ -32,7 +32,8 @@ require('secu/pluginCO.php');
 			      <input type="checkbox" name="accept" id="brand1" value="">
 						<label for="brand1"><span></span>Je ne suis pas un robot</label>
 			 </div>
-			 <input type="submit" value="S'inscrire">
+			 <input type="submit" value="S'inscrire" mail(<<?php $email ?>,'Noreply','Bienvenue sur le site.')>
+       <!--JEREM un ptit lien :https://code.tutsplus.com/tutorials/how-to-implement-email-verification-for-new-members--net-3824-->
 		</form>
   </div>
 

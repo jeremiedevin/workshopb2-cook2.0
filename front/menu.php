@@ -1,7 +1,8 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Viz'eat - K&E</a>
+      <a class="navbar-brand" href="#"></a>
+      <img src="images\accueil\vizeat.png" height="50" width="100">
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="index.php">Accueil</a></li>

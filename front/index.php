@@ -1,4 +1,4 @@
-
+<?php require('secu/pluginCO.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -43,6 +43,6 @@
 <br>
 <br>
     <?php require('footer.php') ?>
-  
+
   </body>
 </html>
