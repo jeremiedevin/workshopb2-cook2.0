@@ -1,5 +1,4 @@
 <?php
-
 require('secu/pluginCO.php');
 if (isset($_SESSION['mail'])) {
 
