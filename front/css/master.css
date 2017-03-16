@@ -1,3 +1,27 @@
 .navbar-inverse{
   
 }
+.navbar-inverse {
+    background-color: #FFF;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #337ab7;
+}
+.btn-warning {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.nav {
+	padding-left: 30%;
+	font-size: 16px;
+}
+font[Attributes Style]{
+	color: #337ab7;
+}
+div.col-sm-12{
+	background-color: #292929;
+}
+#logo{
+	padding-left: 10%;
+}
