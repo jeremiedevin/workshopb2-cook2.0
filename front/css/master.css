@@ -23,5 +23,8 @@ div.col-sm-12{
 	background-color: #292929;
 }
 #logo{
+	height: 70%;
+	width: 70%;
 	padding-left: 10%;
+	text-align: center;
 }
