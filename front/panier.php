@@ -63,6 +63,35 @@ if (isset($_SESSION['mail'])) {
         header('location:panier.php');
       }
       else{
+
+
+
+        
+        if (isset($_GET['supprproduit'])) {
+          $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
+          $result=connexionBDD()->prepare($sql);
+          $result->execute(array($id_client));
+          while($results = $result -> fetch()) {
+            $panier_decode=json_decode($results['panier_json'],true);
+          }
+
+          $positionProduit = array_search($_GET['supprproduit'],$panier_decode['produit']);
+          unset($panier_decode['produit'][$positionProduit]);
+          unset($panier_decode['qte'][$positionProduit]);
+          unset($panier_decode['prix'][$positionProduit]);
+
+
+          $sql="UPDATE panier SET panier_json=(?) WHERE id_client=(?)";
+          $update=connexionBDD()->prepare($sql);
+          $new_panier=json_encode($panier_decode,true);
+          $update->execute(array($new_panier,$id_client));
+          header('location:panier.php');
+
+
+
+
+
+        }
         if (isset($_GET['modifProduit'])) {
           // modification des quantités produits (nombre personnes)
           $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
@@ -108,7 +137,7 @@ if (isset($_SESSION['mail'])) {
           while($results = $result -> fetch()) {
             $panier_decode=json_decode($results['panier_json'],true);
           }
-          $panier="<table class='table'><tr><th>Produit</th><th>Nombre de personnes</th><th>Prix</th></tr>";
+          $panier="<table class='table'><tr><th>Produit</th><th>Nombre de personnes</th><th>Prix</th><th>Supprimer</th></tr>";
           $panier.="<tr>";
           for ($i=0; $i <= max(array_keys($panier_decode['produit'])); $i++) {
             $sql="SELECT nom,prix FROM produit WHERE id=(?)";
@@ -119,7 +148,7 @@ if (isset($_SESSION['mail'])) {
                 $prixproduit=$results['prix'];
             }
             if (isset($nomproduit) && isset($prixproduit)) {
-              $panier.="<tr><td>".$nomproduit."</td><td><form method='post' action='panier.php?modifProduit=".$panier_decode['produit'][$i]."'><input type='number' name='new_qte' value='".$panier_decode['qte'][$i]."'><input value='Modifier' type='submit'></form></td><td>".$prixproduit." € </td></tr>";
+              $panier.="<tr><td>".$nomproduit."</td><td><form method='post' action='panier.php?modifProduit=".$panier_decode['produit'][$i]."'><input type='number' name='new_qte' value='".$panier_decode['qte'][$i]."'><input value='Modifier' type='submit'></form></td><td>".$prixproduit." € </td><td style='text-align:center;'><a href='panier.php?supprproduit=".$panier_decode['produit'][$i]."'><span class='glyphicon glyphicon-trash'></span></a></td></tr>";
               $total+=$panier_decode['qte'][$i]*$prixproduit;
             }
           }
