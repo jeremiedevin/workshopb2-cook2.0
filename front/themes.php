@@ -43,7 +43,7 @@ else{
     }
   }
   $affichageTheme.="</div><div class='col-sm-12' style='text-align:center;margin-top:8vh;margin-bottom:3vh;'>";
-  $affichageTheme.="<select required><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option></select>";
+  // $affichageTheme.="<select required><option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option></select>";
   $affichageTheme.="<input class='btn btn-lg btn-primary' type='submit' value='Ajouter au panier'></form></div>";
 }
 
