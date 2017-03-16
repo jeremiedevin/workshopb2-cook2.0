@@ -1,8 +1,7 @@
-.navbar-inverse{
-  
-}
+
 .navbar-inverse {
     background-color: #FFF;
+    border-color: none;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #337ab7;
@@ -16,12 +15,17 @@
 	padding-left: 30%;
 	font-size: 16px;
 }
-font[Attributes Style]{
+.paris{
 	color: #337ab7;
 }
-#logo{
+
+.textbot > h2 {
+	color: #337ab7;
+}
+
+#bot{
+
 	height: 70%;
 	width: 70%;
-	padding-left: 10%;
 	text-align: center;
 }
