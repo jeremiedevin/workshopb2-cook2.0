@@ -66,7 +66,7 @@ if (isset($_SESSION['mail'])) {
 
 
 
-        
+
         if (isset($_GET['supprproduit'])) {
           $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
           $result=connexionBDD()->prepare($sql);
@@ -80,6 +80,7 @@ if (isset($_SESSION['mail'])) {
           unset($panier_decode['qte'][$positionProduit]);
           unset($panier_decode['prix'][$positionProduit]);
 
+          var_dump($panier_decode);
 
           $sql="UPDATE panier SET panier_json=(?) WHERE id_client=(?)";
           $update=connexionBDD()->prepare($sql);
@@ -142,15 +143,19 @@ if (isset($_SESSION['mail'])) {
           for ($i=0; $i <= max(array_keys($panier_decode['produit'])); $i++) {
             $sql="SELECT nom,prix FROM produit WHERE id=(?)";
             $result=connexionBDD()->prepare($sql);
-            $result->execute(array($panier_decode['produit'][$i]));
-            while($results = $result -> fetch()) {
-                $nomproduit=$results['nom'];
-                $prixproduit=$results['prix'];
+            if (isset($panier_decode['produit'][$i])) {
+              $result->execute(array($panier_decode['produit'][$i]));
+              while($results = $result -> fetch()) {
+                  $nomproduit=$results['nom'];
+                  $prixproduit=$results['prix'];
+              }
+              if (isset($nomproduit) && isset($prixproduit)) {
+                $panier.="<tr><td>".$nomproduit."</td><td><form method='post' action='panier.php?modifProduit=".$panier_decode['produit'][$i]."'><input type='number' name='new_qte' value='".$panier_decode['qte'][$i]."'><input value='Modifier' type='submit'></form></td><td>".$prixproduit." € </td><td style='text-align:center;'><a href='panier.php?supprproduit=".$panier_decode['produit'][$i]."'><span class='glyphicon glyphicon-trash'></span></a></td></tr>";
+                $total+=$panier_decode['qte'][$i]*$prixproduit;
+              }
             }
-            if (isset($nomproduit) && isset($prixproduit)) {
-              $panier.="<tr><td>".$nomproduit."</td><td><form method='post' action='panier.php?modifProduit=".$panier_decode['produit'][$i]."'><input type='number' name='new_qte' value='".$panier_decode['qte'][$i]."'><input value='Modifier' type='submit'></form></td><td>".$prixproduit." € </td><td style='text-align:center;'><a href='panier.php?supprproduit=".$panier_decode['produit'][$i]."'><span class='glyphicon glyphicon-trash'></span></a></td></tr>";
-              $total+=$panier_decode['qte'][$i]*$prixproduit;
-            }
+
+
           }
           $panier.="<tr><th colspan='2'>Total : </th><th>".$total." € </th></tr></table>";
         }
