@@ -1,7 +1,7 @@
 
 .navbar-inverse {
     background-color: #FFF;
-    border-color: #000;
+    border-color: #FFF;
 }
 .navbar-inverse .navbar-nav>li>a {
     color: #337ab7;
@@ -32,11 +32,13 @@
 
 	height: 40%;
 	width: 40%;
+	float: left;
 }
 
 #bot{
 
 	height: 70%;
 	width: 70%;
-	
+	text-align: center;
+
 }
