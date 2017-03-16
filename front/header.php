@@ -1,6 +1,6 @@
 <div class="item active">
   <script
-  src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCHDJE8_1RXsiXaqNOoiAt4xPXtkI39TYM&sensor=false">
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHDJE8_1RXsiXaqNOoiAt4xPXtkI39TYM&sensor=false">
   // clé dev : AIzaSyBLfc3F338iXg3L4nT1WsjplI29vQzImF0
   // clé en ligne : AIzaSyCHDJE8_1RXsiXaqNOoiAt4xPXtkI39TYM
   </script>
