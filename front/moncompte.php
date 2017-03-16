@@ -44,7 +44,6 @@ require('secu/pluginCO.php');
     while($findUsername = $findUser -> fetch()) {
         $username=$findUsername['username'];
         $usermail=$findUsername['mail'];
-
     }
     echo "Nom d'utilisateur: ".$username."<br/>";
 

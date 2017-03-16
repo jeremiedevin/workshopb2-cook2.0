@@ -23,7 +23,7 @@ require('secu/pluginCO.php');
       <br>
       <div class="input-group">
         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-        <input id="password" type="password1" class="form-control" name="password" placeholder="Password">
+        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
       </div>
       <br>
       <button type="submit" class="btn btn-default">Se connecter</button>
@@ -35,7 +35,7 @@ require('secu/pluginCO.php');
       <a class="btn btn-lg btn-primary" href="inscription.php">Pas encore de compte ? Inscrivez-vous ICI.</a>
     </div>
 
-    
+
     <?php require('footer.php') ?>
 
   </body>

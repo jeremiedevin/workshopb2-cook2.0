@@ -10,7 +10,6 @@
 
     <?php require('menu.php'); ?>
 
-
 <p align="center">
     <img src="images/accueil/hey.png" alt="paris_background" width="100%"  align="center">
 
@@ -44,6 +43,6 @@
 <br>
 <br>
     <?php require('footer.php') ?>
-
+  
   </body>
 </html>
