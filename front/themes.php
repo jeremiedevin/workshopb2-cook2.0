@@ -10,7 +10,7 @@ else{
   $count=$trait->rowCount();
   $affichageTheme="<div class='col-sm-10'><form method='post' action='panier.php?ajouttheme'>";
   for ($i=1; $i <= $count; $i++) {
-    $affichageTheme.="<div>Thème : ".$i."</div>";
+    $affichageTheme.="<div class='col-sm-12 alert-danger'><h3>Thème : ".$i."</h3></div>";
     $sql="SELECT * FROM produit WHERE id_typeproduit=1 AND id_theme=(?)";
     $result=connexionBDD()->prepare($sql);
     $result->execute(array($i));
