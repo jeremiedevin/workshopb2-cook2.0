@@ -24,6 +24,9 @@ if (isset($_SESSION['mail'])) {
       header('location:panier.php?produit='.$id.'');
     }
     else{
+      if (isset($_GET['ajouttheme'])) {
+        var_dump($_POST);
+      }
       if (isset($_GET['produit'])) {
         // ajout d'un article
         $sql = "SELECT * FROM panier p WHERE p.id_client=(?)";
